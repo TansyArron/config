@@ -203,6 +203,11 @@ _z() {
 }
 
 alias ${_Z_CMD:-z}='_z 2>&1'
+alias gg='git grep'
+alias s="git status"
+alias co='git checkout'
+alias ll='ls -al --color=auto'
+alias l='ls -hal --color=auto'
 
 [ "$_Z_NO_RESOLVE_SYMLINKS" ] || _Z_RESOLVE_SYMLINKS="-P"
 

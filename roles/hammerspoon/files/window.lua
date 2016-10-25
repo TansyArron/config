@@ -29,6 +29,8 @@ hs.hotkey.bind(hyper, '/', function()
 -- center and enlarge current window; hold to maximize
 hs.hotkey.bind(hyper, "space", rect({1/8, 1/8, 3/4, 3/4}), nil, rect({0, 0, 1, 1}))
 
+hs.hotkey.bind(hyper, "m", rect({0,0,1,1}))
+
 -- define window movement/resize operation mappings
 local dirs = {
   Up    = { half = { 0, 0, 1,.5}, movement = { 0,-20}, complement = "Left",  resize = "Shorter" },
@@ -80,6 +82,11 @@ hs.fnutils.each({"Left", "Right", "Up", "Down"}, function(dir)
     )
 
   end)
+
+-- Move window to another screen
+
+hs.hotkey.bind(hyper, 'N', hs.grid.pushWindowNextScreen)
+hs.hotkey.bind(hyper, 'P', hs.grid.pushWindowPrevScreen)
 
 -- undo for window operations
 undo = {}

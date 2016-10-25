@@ -10,25 +10,20 @@ if hs.processInfo.bundlePath:match("/Users/michael/Library/Developer/Xcode/Deriv
 end
 
 -- initial setup
-hyper = {'⌘', '⌥', '⌃'}
+hyper = {'cmd', 'alt', 'ctrl'}
 hs.window.animationDuration = 0
-hs.luaSkinLog.setLogLevel("warning")
 hs.hotkey.setLogLevel("warning") --suppress excessive keybind printing in console
 hs.window.filter.setLogLevel("error")
 i = hs.inspect -- shortcut for inspecting tables
 clear = hs.console.clearConsole
 
-std = require "hs.stdlib"
-table = std.table
+require "spotify"
 require "utils"
 require "window"
 require "imgur"
 require "pasteboard"
 icons = require "asciicons"
 amphetamine = require "amphetamine"
-volumes = require "volumes"
-docker = require "docker"
-mpd = require "mpd" -- ; mpd.setLogLevel'info'
 require "redshift"
 
 hs.hotkey.bind(hyper, "h", hs.toggleConsole) -- toggle hammerspoon console
@@ -47,12 +42,12 @@ ip = imagePreview
 
 -- bind application hotkeys
 hs.fnutils.each({
-    { key = "t", app = "iTerm" },
-    { key = "i", app = "iTunes" },
-    { key = "s", app = "Safari" },
-    { key = "e", app = "Sublime Text" },
+    { key = "t", app = "Spotify" },
+    { key = "i", app = "iTerm" },
+    { key = "s", app = "Sublime Text" },
+    { key = "j", app = "IntelliJ IDEA CE" },
+    { key = "e", app = "Slack" },
     { key = "c", app = "Google Chrome" },
-    { key = "m", app = "Messages" },
   }, function(item)
 
     local appActivation = function()
