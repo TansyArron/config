@@ -4,13 +4,14 @@ hs.shutdownCallback = function()  hs.settings.set('history', hs.console.getHisto
 hs.console.setHistory(hs.settings.get('history'))
 
 -- load a more minimal config if running from xcode
-if hs.processInfo.bundlePath:match("/Users/michael/Library/Developer/Xcode/DerivedData/") then
+if hs.processInfo.bundlePath:match("/Users/tansy/Library/Developer/Xcode/DerivedData/") then
   require "xcodebuild"
   return
 end
 
 -- initial setup
 hyper = {'cmd', 'alt', 'ctrl'}
+
 hs.window.animationDuration = 0
 hs.hotkey.setLogLevel("warning") --suppress excessive keybind printing in console
 hs.window.filter.setLogLevel("error")

@@ -1,4 +1,4 @@
--- window management
+ -- window management
 
 -- shorthand for focused window
 function fw()

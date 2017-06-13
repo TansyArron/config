@@ -70,6 +70,8 @@
 	<integer>0</integer>
 	<key>HotkeyCode</key>
 	<integer>0</integer>
+	<key>HotkeyMigratedFromSingleToMulti</key>
+	<true/>
 	<key>HotkeyModifiers</key>
 	<integer>0</integer>
 	<key>IRMemory</key>
@@ -126,18 +128,22 @@
 	<string>823 49 445 77 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>791 700 606 456 0 0 1920 1177 </string>
+	<key>NSWindow Frame ProfilesPanel</key>
+	<string>532 957 735 382 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>610 416 700 622 0 0 1920 1177 </string>
+	<string>372 191 700 622 0 0 1440 877 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>269 139 606 469 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>66 548 918 512 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1917 1177 0 0 1920 1177 </string>
+	<string>4 15 1253 1402 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 0 1917 1177 0 0 1920 1177 </string>
+	<string>4 15 2540 1402 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 0 1917 1177 0 0 1920 1177 </string>
+	<string>4 0 2556 1417 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>710 426 570 451 0 0 1440 877 </string>
+	<string>4 0 1429 877 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1599,6 +1605,10 @@
 	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
 	<integer>0</integer>
+	<key>NoSyncInstallUtilitiesPackage</key>
+	<true/>
+	<key>NoSyncInstallUtilitiesPackage_selection</key>
+	<integer>0</integer>
 	<key>NoSyncInstallationId</key>
 	<string>267407C3-651F-4B76-AC56-E72BDFD9D0B1</string>
 	<key>NoSyncLastTipTime</key>
@@ -1644,6 +1654,8 @@
 	<false/>
 	<key>PasteFromClipboard</key>
 	<false/>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>4</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1696,10 +1708,12 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-11-16T05:34:19Z</date>
+	<date>2017-06-06T20:39:10Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
+	<false/>
+	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>ShowPaneTitles</key>
 	<true/>
@@ -1739,9 +1753,11 @@
 	<string>/-+\~_.</string>
 	<key>findIgnoreCase_iTerm</key>
 	<true/>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.12</string>
+	<string>3.1.beta.4</string>
 </dict>
 </plist>

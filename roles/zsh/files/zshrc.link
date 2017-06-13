@@ -46,15 +46,22 @@ fi
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export DOCKER_TLS_VERIFY="1"
 export DOCKER_HOST="tcp://192.168.99.100:2376"
-export DOCKER_CERT_PATH="/Users/michael/.docker/machine/machines/default"
+export DOCKER_CERT_PATH="/Users/tansy/.docker/machine/machines/default"
 export DOCKER_MACHINE_NAME="default"
 
+# Rebase current branch onto master, if an arg is provided, use 'git fpull $arg'
 rebase() {
-    branchname=$(git branch | grep '\*' | awk '{print $2}')
+  branchname=$(git branch | grep '\*' | awk '{print $2}')
+  if [ $1 ]
+    then
+    service=$1
+    git fpull "$service"
+  else
     git checkout master
     git pull --rebase
     git checkout $branchname
     git rebase master
+  fi
 }
 
 # Add Aliases.
@@ -63,5 +70,6 @@ alias s="git status"
 alias co='git checkout'
 alias ll='ls -al'
 alias l='ls -lah'
+alias ad='./arc.sh diff'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
