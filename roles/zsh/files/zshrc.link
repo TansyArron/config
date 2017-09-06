@@ -64,6 +64,6 @@ alias s="git status"
 alias co='git checkout'
 alias ll='ls -al'
 alias l='ls -lah'
-alias ad='./arc.sh diff'
+alias fs='subl --project .git/foursquare-web.sublime-project'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

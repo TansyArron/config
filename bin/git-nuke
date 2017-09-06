@@ -9,4 +9,4 @@
 #   git nuke add-git-nuke
 
 git branch -D $1
-git push origin :$1
+git push tansy :$1

@@ -44,6 +44,11 @@ alias c="clear"
 alias pg='ps -ef | grep'
 alias lj='jobs'
 
+# t <machine name> to ssh to an existing tmux session or create a new one.
+function t {
+  ssh -tA "$1" "tmux attach -t tansy || tmux new -s tansy"
+}
+
 alias reload!='. ~/.zshrc'
 alias vi="vim"
 alias v="vim"

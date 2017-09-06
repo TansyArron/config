@@ -45,7 +45,6 @@ osx_cask_packages:
   - webpquicklook
   - suspicious-package
   # Browsers
-  - firefox
   - google-chrome
   # Utilities
   - bettertouchtool
@@ -58,10 +57,3 @@ osx_cask_packages:
   # Backup/storage
   # - crashplan
 
-# Node utilities
-npm_global_packages:
-  - grunt-cli
-  - gulp
-  - coffee-script
-  - bower
-  - jsxhint
